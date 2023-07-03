@@ -16,9 +16,48 @@
     },
     "cleanup": [
         "/share/info",
-        "/share/man"
+        "/share/man",
+        "/yarn-mirror",
+        "/.yarnrc"
     ],
     "modules": [
+        {
+            "name": "yarn-deps",
+            "buildsystem": "simple",
+            "build-commands": [
+                "cp -r $FLATPAK_BUILDER_BUILDDIR/flatpak-node/yarn-mirror/ $FLATPAK_DEST"
+            ],
+            "sources": [
+                "sources/typescript-language-server.json"
+            ]
+        },
+        {
+            "name": "write-yarnrc",
+            "buildsystem": "simple",
+            "build-commands": [
+                "echo $'yarn-offline-mirror \"/usr/lib/sdk/typescript/yarn-mirror\"' > $FLATPAK_DEST/.yarnrc"
+            ]
+        },
+        {
+            "name": "typescript-language-server",
+            "buildsystem": "simple",
+            "build-commands": [
+                "yarn install --offline --use-yarnrc=$FLATPAK_DEST/.yarnrc --ignore-scripts",
+                "yarn build --offline --use-yarnrc=$FLATPAK_DEST/.yarnrc --ignore-scripts",
+                "mkdir -p $FLATPAK_DEST/bin/",
+                "mkdir -p $FLATPAK_DEST/lib/node_modules/typescript-language-server/",
+                "install -Dvm 755 lib/cli.mjs $FLATPAK_DEST/lib/node_modules/typescript-language-server/lib/cli.mjs",
+                "install -Dvm 644 package.json $FLATPAK_DEST/lib/node_modules/typescript-language-server/package.json",
+                "ln -s $FLATPAK_DEST/lib/node_modules/typescript-language-server/lib/cli.mjs $FLATPAK_DEST/bin/typescript-language-server"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/typescript-language-server/typescript-language-server.git",
+                    "tag": "v3.3.2"
+                }
+            ]
+        },
         {
             "name": "typescript",
             "buildsystem": "simple",
