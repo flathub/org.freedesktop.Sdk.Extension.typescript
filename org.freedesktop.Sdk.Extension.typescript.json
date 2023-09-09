@@ -1,10 +1,10 @@
 {
     "id": "org.freedesktop.Sdk.Extension.typescript",
-    "branch": "23.08beta",
+    "branch": "23.08",
     "runtime": "org.freedesktop.Sdk",
     "build-extension": true,
     "sdk": "org.freedesktop.Sdk",
-    "runtime-version": "23.08beta",
+    "runtime-version": "23.08",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.node18"
     ],
