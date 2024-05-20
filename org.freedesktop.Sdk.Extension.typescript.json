@@ -54,7 +54,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/typescript-language-server/typescript-language-server.git",
-                    "tag": "v4.2.0"
+                    "tag": "v4.3.3"
                 }
             ]
         },
@@ -74,8 +74,8 @@
                 "sources/typescript.json",
                 {
                     "type": "archive",
-                    "url": "https://github.com/microsoft/TypeScript/releases/download/v5.3.3/typescript-5.3.3.tgz",
-                    "sha256": "e5335c28f1e86b747bcca820e8445f6f9421bc8ba16a9c3547064ead8fb81c56",
+                    "url": "https://github.com/microsoft/TypeScript/releases/download/v5.4.5/typescript-5.4.5.tgz",
+                    "sha256": "154fae77169f04155ac52d521ac59abb07c9be29ea3744732adbf9f14abb2440",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13733,
