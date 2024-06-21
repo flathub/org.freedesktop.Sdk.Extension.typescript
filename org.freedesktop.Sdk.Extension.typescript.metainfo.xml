@@ -12,6 +12,7 @@
   <translation/>
   <update_contact>christopherdavis@gnome.org</update_contact>
   <releases>
+    <release version="5.5.2" date="2024-06-20"/>
     <release version="5.4.5" date="2024-04-10"/>
     <release version="5.3.3" date="2023-12-06"/>
     <release version="5.1.5" date="2023-06-27"/>
