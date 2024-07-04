@@ -6,13 +6,13 @@
     "sdk": "org.freedesktop.Sdk",
     "runtime-version": "23.08",
     "sdk-extensions": [
-        "org.freedesktop.Sdk.Extension.node18"
+        "org.freedesktop.Sdk.Extension.node20"
     ],
     "separate-locales": false,
     "appstream-compose": false,
     "build-options": {
         "prefix": "/usr/lib/sdk/typescript",
-        "append-path": "/usr/lib/sdk/node18/bin"
+        "append-path": "/usr/lib/sdk/node20/bin"
     },
     "cleanup": [
         "/share/info",
