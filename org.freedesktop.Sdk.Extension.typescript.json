@@ -73,8 +73,8 @@
                 "sources/typescript.json",
                 {
                     "type": "archive",
-                    "url": "https://github.com/microsoft/TypeScript/releases/download/v5.5.2/typescript-5.5.2.tgz",
-                    "sha256": "2f12d2e95610c573b778ac0669497440626c07d6aae6865171e246fce96ddda0",
+                    "url": "https://github.com/microsoft/TypeScript/releases/download/v5.7.3/typescript-5.7.3.tgz",
+                    "sha256": "80cfca1254bab8e81d639178e42d6406d856fba6e34cad60d1ab50ee6e5f7ebb",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13733,
