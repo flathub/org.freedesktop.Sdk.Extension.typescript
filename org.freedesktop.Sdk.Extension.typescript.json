@@ -70,7 +70,6 @@
                 "npm install -g --offline --prefix=$FLATPAK_DEST --install-links"
             ],
             "sources": [
-                "sources/typescript.json",
                 {
                     "type": "archive",
                     "url": "https://github.com/microsoft/TypeScript/releases/download/v5.5.2/typescript-5.5.2.tgz",
