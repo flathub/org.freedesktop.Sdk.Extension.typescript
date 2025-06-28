@@ -1,17 +1,17 @@
 {
     "id": "org.freedesktop.Sdk.Extension.typescript",
-    "branch": "24.08beta",
+    "branch": "24.08",
     "runtime": "org.freedesktop.Sdk",
     "build-extension": true,
     "sdk": "org.freedesktop.Sdk",
-    "runtime-version": "24.08beta",
+    "runtime-version": "24.08",
     "sdk-extensions": [
-        "org.freedesktop.Sdk.Extension.node20"
+        "org.freedesktop.Sdk.Extension.node24"
     ],
     "separate-locales": false,
     "build-options": {
         "prefix": "/usr/lib/sdk/typescript",
-        "append-path": "/usr/lib/sdk/node20/bin"
+        "append-path": "/usr/lib/sdk/node24/bin"
     },
     "cleanup": [
         "/share/info",
@@ -53,7 +53,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/typescript-language-server/typescript-language-server.git",
-                    "tag": "v4.3.3"
+                    "tag": "v4.3.4"
                 }
             ]
         },
@@ -70,11 +70,10 @@
                 "npm install -g --offline --prefix=$FLATPAK_DEST --install-links"
             ],
             "sources": [
-                "sources/typescript.json",
                 {
                     "type": "archive",
-                    "url": "https://github.com/microsoft/TypeScript/releases/download/v5.5.2/typescript-5.5.2.tgz",
-                    "sha256": "2f12d2e95610c573b778ac0669497440626c07d6aae6865171e246fce96ddda0",
+                    "url": "https://github.com/microsoft/TypeScript/releases/download/v5.8.2/typescript-5.8.2.tgz",
+                    "sha256": "ef938a45323df5775664ea5d55e8bc0ab2027a40db1ff857bb957fe7bbaa4434",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13733,
