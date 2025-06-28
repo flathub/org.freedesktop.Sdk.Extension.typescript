@@ -6,12 +6,12 @@
     "sdk": "org.freedesktop.Sdk",
     "runtime-version": "24.08",
     "sdk-extensions": [
-        "org.freedesktop.Sdk.Extension.node20"
+        "org.freedesktop.Sdk.Extension.node24"
     ],
     "separate-locales": false,
     "build-options": {
         "prefix": "/usr/lib/sdk/typescript",
-        "append-path": "/usr/lib/sdk/node20/bin"
+        "append-path": "/usr/lib/sdk/node24/bin"
     },
     "cleanup": [
         "/share/info",
