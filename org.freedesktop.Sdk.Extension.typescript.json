@@ -87,8 +87,7 @@
             "name": "metainfo",
             "buildsystem": "simple",
             "build-commands": [
-                "mkdir -p ${FLATPAK_DEST}/share/metainfo",
-                "cp org.freedesktop.Sdk.Extension.typescript.metainfo.xml ${FLATPAK_DEST}/share/metainfo"
+                "install -Dm644 ${FLATPAK_ID}.metainfo.xml -t ${FLATPAK_DEST}/share/metainfo/"
             ],
             "sources": [
                 {
