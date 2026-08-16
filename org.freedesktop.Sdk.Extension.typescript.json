@@ -53,6 +53,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/typescript-language-server/typescript-language-server.git",
+                    "commit": "0a034dae6c777733f4c2f6d5b151c5ef781fb662",
                     "tag": "v4.3.4"
                 }
             ]
