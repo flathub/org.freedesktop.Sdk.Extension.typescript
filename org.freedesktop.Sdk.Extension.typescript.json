@@ -1,6 +1,6 @@
 {
     "id": "org.freedesktop.Sdk.Extension.typescript",
-    "branch": "26.08beta",
+    "branch": "26.08",
     "runtime": "org.freedesktop.Sdk",
     "build-extension": true,
     "sdk": "org.freedesktop.Sdk",
