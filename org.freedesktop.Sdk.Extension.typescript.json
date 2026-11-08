@@ -80,7 +80,7 @@
                         "type": "anitya",
                         "project-id": 13733,
                         "stable-only": true,
-                        "url-template": "https://github.com/microsoft/TypeScript/releases/download/v$version/typescript-$version.tgz"
+                        "url-template": "https://registry.npmjs.org/typescript/-/typescript-$version.tgz"
                     }
                 }
             ]
